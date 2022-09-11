@@ -5,25 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast And Easy Gadgets</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container navigation">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg navbr-light bg-white">
             <div class="container-fluid">
-              <a class="navbar-brand" href="">
-
-
-                <img class="img-fluid" src="image/rsz_220201102_182430.png" alt="fast n Easy Gadgets">
+              <a class="navbar-brand" href="index.html">
+                <img  src="image/rsz_220201102_182430.png" alt="fast n Easy Gadgets">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="d-flex justify-content-end">
+              
               <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
                 
-                <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav  ml-auto">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
@@ -39,25 +38,26 @@
                   
                 </ul>
             </div>
-              </div>
+              
             </div>
           </nav>
     </div>
-    <div class="container carousel">
-      <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+    <section class="banner">
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
             
             <div class="carousel-inner">
               <div class="carousel-item active ">
-                <div class="row justify-content-cente d-flex align-items-center">
-                    <div class="col-md-6">
+                <div class="row  d-flex align-items-center">
+                    <div class="col-md-6 order-1 order-md-0 pr-md-5">
                         <h3>Mackbook Pro</h3>
                         <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed cumque voluptate, repellat pariatur laborum rerum temporibus praesentium? Ex, doloremque? Laborum.</h6>
-                        <button class="buy-now">BUY NOW &rarr;</button>
+                        <button class=" buy-now"><a href="">BUY NOW &rarr;</a></button>
                     </div>
                     <div class="col-md-6">
                         <img class="img-fluid" src="image/banner-products/product-1.png" class="d-block w-100" alt="...">
@@ -66,11 +66,11 @@
                 
               </div>
               <div class="carousel-item">
-                <div class="row justify-content-cente d-flex align-items-center">
-                    <div class="col-md-6">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6 order-1 order-md-0 pr-md-5">
                       <h3>Amazon Alexa</h3>
                         <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed cumque voluptate, repellat pariatur laborum rerum temporibus praesentium? Ex, doloremque? Laborum Lorem ipsum dolor sit amet.</h6>
-                        <button class="buy-now">BUY NOW &rarr;</button>
+                        <button class="buy-now"><a href="">BUY NOW &rarr; </a></button>
 
                     </div>
                     <div class="col-md-6">
@@ -80,10 +80,10 @@
               </div>
               <div class="carousel-item">
                 <div class="row justify-content-cente d-flex align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-md-6 order-1 order-md-0 pr-md-5">
                       <h3>JBL Bluetooth Speeker</h3>
                         <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed cumque voluptate, repellat pariatur laborum rerum temporibus praesentium? Ex, doloremque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis itaque neque velit. Ducimus molestias amet quas quod ipsa? Eligendi deleniti ducimus ab provident autem facere non expedita tenetur, sint iusto?</h6>
-                        <button class="buy-now">BUY NOW &rarr;</button>
+                        <button class="buy-now"><a href="#"> BUY NOW &rarr; </a></button>
 
                     </div>
                     <div class="col-md-6">
@@ -96,10 +96,11 @@
           </div>
 
     </div>
+  </section>
 
 
-    <div class="container " id="phones" >
-      <ul class="nav d-flex justify-content-between">
+    <div class="container mb-5" id="phones" >
+      <ul class="nav d-flex justify-content-between mb-3">
         <li class="nav-item">
           <h3>Smartphones</h3>
         </li>
@@ -108,13 +109,14 @@
         </li>
         
       </ul>
+      <div class="card-deck">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
             <img src="image/phone/phone-1.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Redmi k30 5G</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
               
               <h3>$455</h3>
               <button class="buy-now"><a href="https://www.facebook.com/FEGadgets">BUY NOW &rarr;</a></button>
@@ -146,7 +148,7 @@
             <img src="image/phone/phone-3.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Samsung S21 Ultra</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
               
               <h3>$1000</h3>
               <button class="buy-now" d-flex justify-content-center><a href="https://www.facebook.com/FEGadgets">BUY NOW &rarr;</a></button>
@@ -155,13 +157,14 @@
           </div>
         </div>
       </div>
+      </div>
 
 
 
 
 
     </div>
-    <div class="container " id="laptop" >
+    <div class="container mb-5 " id="laptop" >
       <ul class="nav d-flex justify-content-between">
         <li class="nav-item">
           <h3>Laptops</h3>
@@ -177,7 +180,7 @@
             <img src="image/laptop/product-1.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Asus vivobook S15 S530UN</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
               
               <h3>$800</h3>
               <button class="buy-now"><a href="https://www.facebook.com/FEGadgets">BUY NOW &rarr;</a></button>
@@ -208,7 +211,7 @@
             <img src="image/laptop/product-3.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">HP Elitebook G12</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
               
               <h3>$1000</h3>
               <button class="buy-now" d-flex justify-content-center><a href="https://www.facebook.com/FEGadgets">BUY NOW &rarr;</a></button>
@@ -225,35 +228,38 @@
     </div>
     <div class="container cate">
       <h2 class=".cat-name d-flex justify-content-center">Categories</h2>
-      <div class="row catall">
-        <div class="col">
-          <div class="row catt text-center ">
-            <div class="col catg1">
-              <div class="cate1 ">
-                <img class="img-fluid" src="image/Categories/bag.png" alt="">
-                <h3>Bag</h3>
-              </div>
+      <span class="color-bar mb-5"></span>
+      <div class="row align-items-center">
+        <div class="col-md-3 order-3 order-md-0">
+            <div class="single-cat reverse-radious shadow-lg p-5 mb-4">
+                <a href="#">
+                    <img class="img-fluid" src="image/Categories/bag.png" alt="">
+                    <h4>Bag</h4>
+                </a>
             </div>
-            <div class="col ">
-              <div class="cate1">
-                <img class="img-fluid" src="image/Categories/perfume.png" alt="">
-                <h3>Beauty</h3>
-              </div>
-              <div class="cate1">
-                <img class="img-fluid" src="image/Categories/shoe.png" alt="">
-                <h3>Shoes</h3>
-              </div>
+        </div>
+        <div class="col-md-3 order-2 order-md-1">
+            <div class="single-cat shadow-lg p-5 mb-4  mb-md-5">
+                <a href="#">
+                    <img class="img-fluid" src="image/Categories/perfume.png" alt="">
+                    <h4>Beauty</h4>
+                </a>
             </div>
-          </div>
+            <div class="single-cat shadow-lg p-5 mb-4">
+                <a href="#">
+                    <img class="img-fluid" src="image/Categories/shoe.png" alt="">
+                    <h4>Shoes</h4>
+                </a>
+            </div>
         </div>
-        <div class="col">
-          
-          
-          <img class="img-fluid" src="image/Categories/pale-order.png"alt="">
+        <div class="col-md-6 order-0 order-md-2">
+            <img class="img-fluid" src="image/Categories/pale-order.png" alt="">
         </div>
-      </div>
     </div>
- 
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
