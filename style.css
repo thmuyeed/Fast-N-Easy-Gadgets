@@ -1,3 +1,7 @@
+* {
+    transition: .3s all ease-in-out;
+}
+
 .container{
     margin-bottom: 80px;
 }
@@ -8,7 +12,18 @@
     background-position: center;
     
 }
-h6{
+.card {
+    border: none;
+    box-shadow: 0 5px 20px rgba(109, 109, 109, 0.12);
+    border-radius: 10px;
+    text-align: center;
+}
+.product-cat-title a {
+    color: #FF9D00;
+    font-weight: 700;
+    
+}
+.carousel-item h6{
     color: gray;
     margin: 30px 0px;
 }
@@ -23,9 +38,7 @@ h6{
     border-radius: 10px;
     
 }
-#phones .card{
-    min-height:680px;
-}
+
 .botom{
     position: absolute;
     bottom: 10px;
@@ -33,38 +46,88 @@ h6{
     justify-content: center;
     align-items: center;
 }
-#laptop .card{
-    min-height: 600px;
+
+
+
+.card img {
+    padding-top: 30px;
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-.card{
+
+
+.product-cat-title a {
+    color: #FF9D00;
+    font-weight: 700;
+}
+
+.single-cat {
     text-align: center;
-    border:none;
+    border-radius: 20px 0 20px 0px;
+}
+.single-cat a h4{
+    color: #2c2c2c;
+    margin-top: 10px;
+}
+.single-cat.reverse-radious{
+    border-radius: 0 20px 0 20px;
 
-
-    box-shadow: 5px 5px 100px lightgray ;
-    border-radius: 20px;
 }
 
-
-.catg1{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.single-cat:hover {
+    transform: translateY(-10px);
 }
-
-.catall{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+a{
+    text-decoration: none;
 }
-.cate1{
-    padding: 40px;
-    box-sizing: border-box;
-    margin-bottom: 50px;
-   
-    box-shadow: 15px 15px 30px lightgray;
-    border-radius: 30px 0px;
-    
+a:hover {
+    text-decoration: none;
+    color: #FFD019;
+}
+.navbar-brand img
+{
+    height: 100px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #707070;
+}
+.banner{
+    background-image: url(image/bg-2.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 8%;
+}
+.carousel-indicators li{
+    background-color: #CECECE;
+    height: 10px;
+    width: 16px;
+    border-radius: 6px;
+    border: none;
+}
+.carousel-indicators .active {
+    background-image: linear-gradient(to right, #FF9C35, #FFD019);
+    width: 45px;
+}
+span.color-bar {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 5px;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, #FF9C35, #FFD019);
+}
+.contack{
+    background: #ffc107;
+    padding: 50px 70px;
+ 
+}
+footer a{
+    color: #2c2c2c;
+}
+.social-media i {
+    width: 40px;
     
 }
