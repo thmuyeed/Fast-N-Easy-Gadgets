@@ -87,8 +87,8 @@ a:hover {
     text-decoration: none;
     color: #FFD019;
 }
-.navbar-brand img,
-footer img {
+.navbar-brand img
+{
     height: 100px;
 }
 .navbar-light .navbar-nav .nav-link {
@@ -124,4 +124,10 @@ span.color-bar {
     padding: 50px 70px;
  
 }
-
+footer a{
+    color: #2c2c2c;
+}
+.social-media i {
+    width: 50px;
+    
+}
